@@ -1,0 +1,136 @@
+/* PasswordGenerator.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #98ff98, #20b2aa); /* Gradient from Mint Green to Light Sea Green */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+  max-width: 500px; /* Set max width for better layout on larger screens */
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center align form horizontally */
+  color: #333;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="number"] {
+  padding: 5px; /* Increased padding for better touch targets */
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px; /* Increased space between input and other elements */
+  width: 80%; /* Full width for better mobile responsiveness */
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  vertical-align: center; /* Align checkbox with text */
+}
+
+label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px; /* Increased padding for better appearance */
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+input[type="submit"].clear {
+  background-color: #dc3545; /* Red background for clear button */
+}
+
+input[type="submit"].clear:hover {
+  background-color: #c82333;
+}
+
+h2 {
+  color: #333;
+  margin-top: 20px;
+  font-size: 24px;
+  word-break: break-word; /* Improved text breaking for long passwords */
+}
+
+/* Responsive Design */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input[type="number"],
+  input[type="submit"] {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  form {
+    width: 95%;
+    padding: 10px;
+  }
+
+  input[type="number"],
+  input[type="submit"] {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
